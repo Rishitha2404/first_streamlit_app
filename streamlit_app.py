@@ -17,6 +17,10 @@ fruits_to_show = my_fruit_list. loc[fruits_selected]
 streamlit.dataframe(fruits_to_show)
 
 
+
+fruit_choice= streamlit.text_input("What fruit would you like information about?",'kiwi')
+streamlit.fruit_choice("User selected: ", fruit_choice)
+
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+"kiwi")
 
